@@ -21,9 +21,9 @@
             </ul>
             <ul class="list site-address">
                 <li><a href="mailto:info@devstudio.com" class="link-mail">
-                    <svg class="mail-svg" width="16px" height="12px"><use href="./images/sprite.svg#envelope"></use></svg> info@devstudio.com</a></li>
+                    <svg class="mail-svg-n" width="16px" height="12px"><use href="./images/sprite.svg#envelope"></use></svg> info@devstudio.com</a></li>
                 <li><a href="tel:+380961111111" class="link-tel">
-                    <svg class="phone-svg"  width="10px" height="16px"><use href="./images/sprite.svg#smartphone"></use></svg> +38 096 111 11 11</a></li>
+                    <svg class="phone-svg-n"  width="10px" height="16px"><use href="./images/sprite.svg#smartphone"></use></svg> +38 096 111 11 11</a></li>
             </ul>
         </nav>
         </div>
@@ -234,7 +234,7 @@
                 </address>
             </div>
             <div class="foo-box">
-                <h3>присоединяйтесь</h3>
+                <h3 class="podpis">присоединяйтесь</h3>
                 <ul class="join-list">
                     <li class="social-element"><a href="https://www.instagram.com/?hl=ru" target="_blank" class="social-link">
                         <svg class="svg-team">
@@ -251,34 +251,52 @@
                     </a></li>
                 </ul>
                 </div>
+                <div>
+                    <div class="podpis-div">
+                        <h3 class="podpis">Подпишитесь на рассылку</h3>
+                        <form>
+                            <label class="podpis-label" for=""></label>
+                            <input class="podpis-input" type="email" name="" id="" placeholder="E-mail">
+                            <button type="submit" class="podpisatsa">Подписатся <svg class="podpis-icon" width="24px" height="24px"><use href="./images/sprite.svg#podpisatsa"></use></svg></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="btn-div">
+
+                </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+            <div class="krestik-div">
             <button type="button" class="form-wraper-close" data-modal-close>
                 <svg class="krestik-svg">
                     <use href="./images/sprite.svg#Krestik"></use>
                 </svg>
             </button>
+            </div>
             <h2 class="form-heading">Оставьте свои данные, мы вам перезвоним</h2>
             <form class="form js-speaker-form">
+                <label class="label frm" for="name">Имя</label>
                 <div class="form-field">
-                    <label class="label" for="name">Имя</label>
+                    <svg class="svg-form name-svg" width="12" height="12"><use href="./images/sprite.svg#name"></use></svg>
                     <input class="input" type="text" name="user-name" id="name" autofocus>
                 </div>
 
+                <label class="label frm" for="tel">Телефон</label>
                 <div class="form-field">
-                    <label class="label" for="tel">Телефон</label>
+                    <svg class="svg-form phone-svg" width="13" height="13"><use href="./images/sprite.svg#phone"></use></svg>
                     <input class="input" type="tel" name="tel" id="tel">
                 </div>
 
+                <label class="label frm" for="mail">Почта</label>
                 <div class="form-field">
-                    <label class="label" for="mail">Почта</label>
+                    <svg class="svg-form mail-svg" width="15" height="12"><use href="./images/sprite.svg#mail"></use></svg>
                     <input class="input" type="email" name="mail" id="mail">
                 </div>
 
                 <div class="form-field">
-                    <label class="label" for="comment">Коментарий</label>
+                    <label class="label" for="comment">Комментарий</label>
                     <textarea name="comment" placeholder="Введите текст" id="comment" rows="10"></textarea>
                 </div>
 
